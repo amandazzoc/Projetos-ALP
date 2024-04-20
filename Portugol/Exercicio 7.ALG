@@ -22,7 +22,7 @@ escreval("O consumo de combustivel (n° de litros):")
 leia(cc)
 
 dp <- kf-ki
-gc <- (kf-ki)/cc
+gc <- dp/cc
 escreva("O consumo de combustível do seu automóvel em Km/L é:",gc)
 
 Fimalgoritmo
