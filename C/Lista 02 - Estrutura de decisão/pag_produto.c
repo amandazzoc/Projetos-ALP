@@ -9,30 +9,30 @@ int main(){
     int cp = 0;
     float pe, vt;
 
-    printf("Digite o preÁo da etiqueta: ");
+    printf("Digite o pre√ßo da etiqueta: ");
     scanf("%f", &pe);
-    printf("Digite o cÛdigo da condiÁ„o de pagamento: ");
+    printf("Digite o c√≥digo da condi√ß√£o de pagamento: ");
     scanf("%d", &cp);
 
     switch(cp){
         case 1:
-            vt = pe - (pe * 0.10);
-            printf("O pagamento È · vista em dinheiro ou cheque, com 10 por cento de desconto. Valor total: R$%.2f\n", vt);
+            vt = pe * 0.9;
+            printf("O pagamento √© √° vista em dinheiro ou cheque, com 10 por cento de desconto. Valor total: R$%.2f", vt);
             break;
         case 2:
-            vt = pe - (pe * 0.05);
-            printf("O pagamento È · vista com cart„o de crÈdito, com 5 por cento de desconto. Valor total: R$%.2f\n", vt);
+            vt = pe * 0.95;
+            printf("O pagamento √© √° vista com cart√£o de cr√©dito, com 5 por cento de desconto. Valor total: R$%.2f", vt);
             break;
         case 3:
             vt = pe / 2;
-            printf("O pagamento È em 2 vezes sem juros. Valor da parcela: R$%.2f\n", vt);
+            printf("O pagamento √© em 2 vezes sem juros. Valor da parcela: R$%.2f", vt);
             break;
         case 4:
-            vt = pe / 3;
-            printf("O pagamento È em 3 vezes sem juros. Valor da parcela: R$%.2f\n", vt);
+            vt = pe * 1.1 / 3;
+            printf("O pagamento √© em 3 vezes sem juros. Valor da parcela: R$%.2f", vt);
             break;
         default:
-            printf("CondiÁ„o de pagamento inv·lida.\n");
+            printf("Condi√ß√£o de pagamento inv√°lida.\n");
             break;
     }
 
